@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %> | Shamsur Rahman Rifat
+    </title>
+    <meta name="description" content="Portfolio of Shamsur Rahman Rifat, a Web Developer specialized in MERN stack.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Rifat.</a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <% if (page==='home' ) { %>
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                        <li><a href="/contact" class="nav-link">Contact</a></li>
+                        <% } else { %>
+                            <li><a href="/" class="nav-link">Home</a></li>
+                            <li><a href="/about" class="nav-link">About</a></li>
+                            <li><a href="/#skills" class="nav-link">Skills</a></li>
+                            <li><a href="/#projects" class="nav-link">Projects</a></li>
+                            <li><a href="/#experience" class="nav-link">Experience</a></li>
+                            <li><a href="/#certificates" class="nav-link">Certificates</a></li>
+                            <li><a href="/contact" class="nav-link">Contact</a></li>
+                            <% } %>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
