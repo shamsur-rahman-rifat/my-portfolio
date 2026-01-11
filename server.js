@@ -26,12 +26,12 @@ app.get('/', (req, res) => res.render('index', {
     page: 'home'
 }));
 app.get('/about', (req, res) => res.render('about', {
-    title: 'Expert Web Developer Bangladesh | About Shamsur Rahman Rifat',
+    title: 'About Shamsur Rahman Rifat | Completed 10+ Projects',
     description: 'Skilled web developer from Bangladesh with a passion for coding. I create dynamic, responsive user interfaces and robust backends. Meet your dev.',
     page: 'about'
 }));
 app.get('/contact', (req, res) => res.render('contact', {
-    title: 'Hire Web Developer in Bangladesh | Get in Touch',
+    title: 'Hire Shamsur Rahman Rifat As Your Web Developer',
     description: 'Need a reliable web developer in Bangladesh? Get efficient, quality web solutions tailored to your needs. Let\'s discuss your project requirements.',
     page: 'contact'
 }));
