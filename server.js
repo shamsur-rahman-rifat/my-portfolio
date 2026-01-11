@@ -20,30 +20,30 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Routes
-app.get('/', (req, res) => res.render('index', { 
-    title: 'Best Web Developer in Bangladesh | Shamsur Rifat', 
+app.get('/', (req, res) => res.render('index', {
+    title: 'Best Web Developer in Bangladesh | Shamsur Rahman Rifat',
     description: 'Top-rated web developer providing custom MERN stack solutions. I build fast, secure, and scalable websites for businesses worldwide. Hire me today.',
-    page: 'home' 
+    page: 'home'
 }));
-app.get('/about', (req, res) => res.render('about', { 
-    title: 'Expert Web Developer Bangladesh | About S. Rifat', 
+app.get('/about', (req, res) => res.render('about', {
+    title: 'Expert Web Developer Bangladesh | About Shamsur Rahman Rifat',
     description: 'Skilled web developer from Bangladesh with a passion for coding. I create dynamic, responsive user interfaces and robust backends. Meet your dev.',
-    page: 'about' 
+    page: 'about'
 }));
-app.get('/contact', (req, res) => res.render('contact', { 
-    title: 'Hire Web Developer in Bangladesh | Get in Touch', 
+app.get('/contact', (req, res) => res.render('contact', {
+    title: 'Hire Web Developer in Bangladesh | Get in Touch',
     description: 'Need a reliable web developer in Bangladesh? Get efficient, quality web solutions tailored to your needs. Let\'s discuss your project requirements.',
-    page: 'contact' 
+    page: 'contact'
 }));
-app.get('/terms', (req, res) => res.render('terms', { 
-    title: 'Terms & Conditions | Shamsur Rahman Rifat', 
+app.get('/terms', (req, res) => res.render('terms', {
+    title: 'Terms & Conditions | Shamsur Rahman Rifat',
     description: 'Terms and conditions for Shamsur Rahman Rifat\'s portfolio website.',
-    page: 'terms' 
+    page: 'terms'
 }));
-app.get('/privacy', (req, res) => res.render('privacy', { 
-    title: 'Privacy Policy | Shamsur Rahman Rifat', 
+app.get('/privacy', (req, res) => res.render('privacy', {
+    title: 'Privacy Policy | Shamsur Rahman Rifat',
     description: 'Privacy policy outlining how user data is handled on Shamsur Rahman Rifat\'s portfolio.',
-    page: 'privacy' 
+    page: 'privacy'
 }));
 
 // Contact Form Handler
